@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,3 +77,21 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+
+## Completion record
+
+Implemented sections 1 and 2; 15 tests and typecheck passed. Reviewer confirmed that the preview was seen. Owner approved cleanup; regenerated HTML with LANE_MARKER unset and replaced the same public URL. Verified HTTP 200, no marker set banner, original lane marker absent, and exact match with the prepared clean HTML. Course acceptance is tracked separately.
+
+Preview: https://inspiring-kangaroo-e4b623.netlify.app
+
+## Issues
+
+- https://github.com/Ignolek/mega-s01e04-rig/issues/1
+- https://github.com/Ignolek/mega-s01e04-rig/issues/2
+- https://github.com/Ignolek/mega-s01e04-rig/issues/3
+- https://github.com/Ignolek/mega-s01e04-rig/issues/4
+- https://github.com/Ignolek/mega-s01e04-rig/issues/5
+- https://github.com/Ignolek/mega-s01e04-rig/issues/6
+- https://github.com/Ignolek/mega-s01e04-rig/issues/7
+- https://github.com/Ignolek/mega-s01e04-rig/issues/8
