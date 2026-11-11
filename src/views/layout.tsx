@@ -16,6 +16,13 @@ const css = `
   th { color: var(--mute); font-weight: normal; }
   .warn { color: var(--warn); }
   .mute { color: var(--mute); }
+  .digest-scroll { overflow-x: auto; }
+  .digest-scroll:focus-visible { outline: 2px solid var(--warn); outline-offset: 4px; }
+  .digest-table caption { text-align: left; color: var(--mute); padding-bottom: .5rem; }
+  .digest-table th, .digest-table td { vertical-align: top; }
+  .digest-table th[scope="row"] { color: var(--fg); }
+  .digest-table time { white-space: nowrap; }
+  .digest-table .had-fail th[scope="row"] { border-left: 3px solid var(--warn); padding-left: .5rem; }
 `;
 
 export function Layout(props: { title: string; lane: Lane; children: Child }) {
@@ -25,6 +32,7 @@ export function Layout(props: { title: string; lane: Lane; children: Child }) {
       <html lang="en">
         <head>
           <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>rig · {props.title}</title>
           <style>{raw(css)}</style>
         </head>
